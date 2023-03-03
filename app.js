@@ -14,7 +14,7 @@ app.use(bodyparser.json());
 app.use("/", router);
 app.use(express.static(path.join(__dirname, "./healthpoint/build")))
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./healthpoint/build/index.html"))
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
 })
 
 // app.get('/', (req, res) => {
