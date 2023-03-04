@@ -11,7 +11,7 @@ const app = express();
 
 const host = "localhost";
 app.use(bodyparser.json());
-app.use(express.static(path.join(__dirname, "./healthpoint/build")))
+app.use(express.static(path.join(__dirname, "./client/build")))
 app.use("/", router);
 
 app.use((req, res, next) => {
